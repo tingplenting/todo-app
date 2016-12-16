@@ -1,9 +1,21 @@
-# Ionic Pre-populated sqlite
+# Ionic ToDo App
+
+### Library
+
+- fullcalendar + uicalendar.js
+- https://github.com/angular-ui/ui-calendar
+
+```sh
+bower install ngCordova
+bower install fullcalendar
+```
 
 ### Plugins
 
-- `https://github.com/an-rahulpandey/cordova-plugin-dbcopy`
-- `https://github.com/litehelpers/Cordova-sqlite-storage`
+```sh
+cordova plugin add https://github.com/litehelpers/Cordova-sqlite-storage.git
+cordova plugin add https://github.com/an-rahulpandey/cordova-plugin-dbcopy.git
+```
 
 ### Schema
 
