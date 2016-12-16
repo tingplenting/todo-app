@@ -69,6 +69,7 @@
 						[categoryId,result])
 					.then(function(res) {
 						scope.lists.push({
+							id: res.insertId,
 							cid: categoryId,
 							name: result
 						});

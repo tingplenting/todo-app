@@ -23,9 +23,13 @@
 		});
 	}
 
-	appConfig.$inject = ['$stateProvider','$urlRouterProvider'];
+	appConfig.$inject = [
+				'$stateProvider',
+				'$urlRouterProvider',
+				'$ionicConfigProvider'
+			];
 
-	function appConfig (stateProvider,urlRouterProvider) {
+	function appConfig (stateProvider,urlRouterProvider,ionicConfigProvider) {
 		stateProvider
 			.state('config', {
 				url: '/config',
@@ -49,6 +53,7 @@
 			});
 
 		urlRouterProvider.otherwise('/config');
+		ionicConfigProvider.backButton.previousTitleText(false).text('');
 	}
 
 })(this);
