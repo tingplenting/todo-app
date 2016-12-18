@@ -1,10 +1,18 @@
 <ion-view >
+
 <ion-nav-title>Calendar Scroll Issue</ion-nav-title>
 <ion-content scroll="true" has-bouncing="false" class="showScroll">
-        <div class="row">
-        	<div class="col col-100" >
-          <div scroll="true"  ui-calendar="uiConfig" class="calendar target" ng-model="eventSource" id="dayCalendar" calendar="dayCalendar"></div>
-          </div>
-         </div>
- </ion-content>
+	<div class="row">
+		<div class="col col-100" >
+			<div id="dayCalendar"
+				 class="calendar target"
+				 scroll="true"
+				 ui-calendar="uiConfig"
+				 ng-model="eventSource" 
+				 calendar="dayCalendar">
+			</div>
+		</div>
+	</div>
+</ion-content>
+
 </ion-view>
