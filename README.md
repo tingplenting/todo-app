@@ -7,7 +7,7 @@
 
 ```sh
 bower install ngCordova
-bower install fullcalendar
+bower install --save angular-ui-calendar
 ```
 
 ### Plugins
