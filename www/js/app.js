@@ -5,7 +5,7 @@
 	_vg.db = null;
 
 	angular
-		.module('todoApp',['ionic','ngCordova','ui.calendar'])
+		.module('todoApp',['ionic','ngCordova'])
 		.run(appRun)
 		.config(appConfig);
 
@@ -50,11 +50,6 @@
 				url: "/items/:categoryId/:listId",
 				templateUrl: "templates/items.html",
 				controller: "ItemsCtrl"
-			})
-			.state('calendar', {
-				url: "/calendar",
-				templateUrl: "templates/calendar.html",
-				controller: "CalendarCtrl"
 			});
 
 		urlRouterProvider.otherwise('/config');
